@@ -9,7 +9,7 @@ import axios from "axios";
 function App() {
   const toast = useToast();
   const [inputAddress,setInputAddress] = useState('');
-  const FAUCET_ENDPOINT ="https://exzo-faucet.vercel.app/faucet";
+  const FAUCET_ENDPOINT ="https://nexis-faucet.vercel.app/faucet";
   // const FAUCET_ENDPOINT ="http://localhost:8080/faucet";
 
   const addNetwork = async () => {
@@ -18,14 +18,14 @@ function App() {
         method: 'wallet_addEthereumChain',
         params: [{
           chainId: '0x942',
-          chainName: 'Exzo Testnet',
+          chainName: 'Nexis Network Testnet',
           nativeCurrency: {
-            name: 'Exzo',
-            symbol: 'XZO',
+            name: 'Nexis',
+            symbol: 'NZT',
             decimals: 18,
           },
-          rpcUrls: ['https://evm-test.exzo.network'],
-          blockExplorerUrls: ['https://evm-testnet.exzoscan.io/'], 
+          rpcUrls: ['https://evm-testnet.nexis.network'],
+          blockExplorerUrls: ['https://evm-testnet.nexscan.io/'], 
         }],
       });
     } catch (error) {
@@ -65,21 +65,21 @@ function App() {
   return (
     <div className='app-container'>
       <Navbar/>
-        <div style={{ display: 'flex',flexDirection:'column', justifyContent: 'center', alignItems: 'center', height: '70vh' }}>
+        <div style={{ display: 'flex',flexDirection:'column', justifyContent: 'center', alignItems: 'center', height: '70vh' }} className='glassmorph'>
         <Heading as='h2' size='xl' style={{ borderBottom: '2px solid #ccc' }}>
           
-        EXZO <span style={{ backgroundColor: '#2ef2b1' }}>Faucet</span>
+        Nexis <span style={{ backgroundColor: 'black',color:'white',padding:'2px' }}>Faucet</span>
       </Heading>
       <div style={{margin:'20px',maxWidth:'60%'}}>
 
-      <Text fontSize='lg'>
-          NOTE: We only send testnet EXZO , which don't have any financial significance.
+      <Text fontSize='lg' fontWeight='bold'>
+          NOTE: We only send testnet NZT , which don't have any financial significance.
           </Text>
          
           </div>
           <Input placeholder='Paste Address' size='lg' width={"65vw"} value={inputAddress} onChange={e=>setInputAddress(e.target.value)}/>
           <br />
-          <Button className='connect-button' onClick={handleClick}>Receive 10 Test EXZO</Button>
+          <Button className='connect-button' onClick={handleClick}>Receive 10 Test NZT</Button>
         </div>
 
       <Footer addNetwork={addNetwork} />

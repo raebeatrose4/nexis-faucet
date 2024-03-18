@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json()); 
 
 const privateKey = process.env.PRIVATE_KEY;
-const provider = new ethers.providers.JsonRpcProvider('https://evm-test.exzo.network');
+const provider = new ethers.providers.JsonRpcProvider('https://evm-testnet.nexis.network');
 
 const requestHistory = {};
 
