@@ -33,7 +33,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./bg.png');
+    background-image: url('https://raw.githubusercontent.com/Nexis-Network/Nexis-Brand-Kit/main/Cover.png');
     background-size: cover;
     background-repeat: no-repeat;
     /* filter: blur(10px); */
