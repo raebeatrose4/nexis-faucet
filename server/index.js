@@ -44,6 +44,7 @@ app.post('/faucet', async(req, res) => {
         await signTransaction(address);
         res.status(200).send({sent: true});
     } catch (error) {
+        console.log(error)
         res.status(200).send({sent: false, error:"encountered some error"});
     }
 });

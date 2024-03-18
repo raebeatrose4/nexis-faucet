@@ -9,7 +9,7 @@ import axios from "axios";
 function App() {
   const toast = useToast();
   const [inputAddress,setInputAddress] = useState('');
-  const FAUCET_ENDPOINT ="https://nexis-faucet.vercel.app/faucet";
+  const FAUCET_ENDPOINT ="https://nexis-sandy.vercel.app/faucet";
   // const FAUCET_ENDPOINT ="http://localhost:8080/faucet";
 
   const addNetwork = async () => {
