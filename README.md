@@ -1,12 +1,11 @@
-# exzo-faucet
-testnet faucet for exzo
-
-<img width="960" alt="image" src="https://github.com/raebeatrose4/exzo-faucet/assets/139626898/1f8e6d4c-fb10-4065-954b-61c49faed74a">
+# nexis-faucet
+testnet faucet for nexis
+<img width="1352" alt="Screenshot 2024-03-18 at 10 01 28 PM" src="https://github.com/raebeatrose4/nexis-faucet/assets/139626898/28d2e8d0-d2c1-412b-9585-c85cc755bf82">
 
 # Run Locally
 Run the following commands 
 ```
-git clone https://github.com/Exzo-Network/Testnet-Faucet faucet
+git clone https://github.com/raebeatrose4/nexis-faucet faucet
 cd faucet
 yarn install:client
 yarn install:server
